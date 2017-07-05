@@ -1,0 +1,43 @@
+ejb playlist 
+aop 
+devv web html css js
+architecturj2ee 
+architecturj2ee 
+catalog 
+corba
+gestion de compte 2
+cqrd*3
+php 
+ecommerce 2h2
+jdbc_catalog 1h38
+symfony * 4
+pattern stat av mediator protype singleton method creation de class adapter command composit  observer rmi 
+strutspringjpahibernate 1h26
+illustator 52
+heritage 52
+pattern strategy
+1h08
+maven mvc2epartie 
+android communication http json
+tuto ajax jquery ajax php html css
+compte
+site ecommerce * 3 
+architecturj2ee spring over view
+microservice avec spri,gestion
+j2ee play list * 10
+inversion de controle 58mn
+base de develpmt web simulateur
+xml paylist 
+mapping object xml avec jax bind oxm
+xml meteo*2 
+multi agent * 2 
+fin etude jestion de stock partie 2
+web service5tp web service restfull, ejb soap rest, introduct au sop rest, introduct au web service
+base du middleware remote methode invocation
+reso par soket
+maven industriamisation de genie lo
+
+
+
+fin d'etude 2 cordova grunt 
+angularjs

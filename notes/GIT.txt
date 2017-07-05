@@ -1,0 +1,175 @@
+GIT
+
+PREMIER COMMIT
+
+	CMD
+	commander
+	
+	dans le projet
+	
+		git init --initialiser le versionning
+	
+		.git --gerer toute la magie
+	
+		git help config -- comment configurer
+		
+			git config --global user.name 
+			git config --global user.email
+			git config --global color.ui true
+			git config --list
+			
+		//travail
+		
+		touch index.html
+		
+		git status  -- etat de votre serveur
+		
+			TRACKER
+			STAGING --Zone de transit
+			
+			git add index.html  -- stagé
+			git commit  -- inserer le message de commit
+			ou git commit -m "message de commit"
+			git commit -a -m "message de commit"
+			git commit -a -- commit + staging
+			
+			git add "*.html"
+			git add -all 
+			
+			faire toujours un git status avant tout commit
+			
+			//Pour igignore certains fichier
+			
+			creer un fichier .gitignore
+				edit et ajouter les fichier
+					*.temp
+					*.txt
+					tmp* -- tous les fichiers à l'interieur de tmp
+					 
+					 
+			git log
+			git log -n 2 -- deux derniers commit
+			git help log
+			git log --online
+			git log -p  index.php -- commit concerne index.php
+			
+			git diff  --motre les derniers modification
+			
+			
+		REVENIR EN ARRIERE
+		
+			git log --online   --determiner l'endroit du commit
+			git checkout PID
+				impossible de modifier
+			avant de revenir sur master il faut faire des commit mais il ne seront pas enregistrer
+			
+			git checkout PID fichier  --ramener le fichier à son etat
+			git commit "suppression de la modif"  -- revenir en arrier
+			
+			
+			git revert PID --defaire un commit, supprime le fichier commit et pas la modif
+			git revert PID -- NE Modifier pas l'historique
+
+			git reset  HEAD index.html -- pas de stage
+			git reset --
+			
+			git add . --commit les suppression
+			git add
+			git reset -- vider le staging
+			git reset --hard  //revenir en arriere au dernier commit
+			
+			git reset PID
+			
+			git reset HEAD^ --soft
+			git reset HEAD^ --mixed --revenir en arriere sans les stage
+			git reset HEAD^ --hard
+			
+		BRANCHES
+		
+			git branch redisign --creer une nouvelle branche
+			git checkout redesign --se placer sur la branche
+			
+			git add -all
+			git -commit
+			
+			git checkput master --retour sur master 
+			
+			git merge redisign -- fusion avec master
+			git branch -d redesign  -- suppression
+			
+			git merge --no-ff hotfix-html -- no fast foward 
+			
+			// les conflits
+			
+			
+			
+		MANIPULER L'HISTORIQUE
+			
+			git add.
+			git status
+			git commit -amend --revenir sur le commit precedent
+			
+			git rebase master --envoie les commit sur master
+			git checkout master
+			giet merge redisign
+			
+			git checkout redesign
+			git rebase -i master  -- mode interactif (envoie de ce qui a ete fait sur master)
+				pick, le commit est inclus
+				reword le commit peut etre renommé
+ 				squash, le commit sera fusoinné avec le commit au dessus
+				exec , permet d'executer les commandes shell sur le commit
+				
+			git rebase --continue
+			
+			
+			
+		REMOTE
+		
+			git init --bare
+			git remote -v --liste des remote
+			git remote add origin Dossier --depot d'origine
+			git remote rename origin lol --renommé
+			git branch -r  --ensemble des branch adistance
+			git push -- envoyer les modification
+			git push origin master
+			git push master --delete test --supprimer test à distance
+			git pull origin master -- recuperer les modif faite
+			
+			git clone chemin dossier-local
+			git remot -v
+			modification
+			git add -all
+			git commit
+			  
+			git config --global branch.autosetuprebase always
+			
+			git remote remove origin
+			
+			git clone chemin --depth 1 --preciser la profondeur des commit
+			
+			
+			git branch -a  --liste des branch
+			
+		GITHUB
+		
+			tjr travaillé sur une sous branche
+			
+			
+			
+			
+				le 
+			
+			
+ 			
+			
+			
+			
+			
+		
+			
+			
+			
+			
+			
+			

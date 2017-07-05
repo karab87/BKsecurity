@@ -1,0 +1,3 @@
+jboss
+
+	user = admin password root

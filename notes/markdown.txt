@@ -1,0 +1,27 @@
+markdown
+titre = npmbre de diese
+
+paragraphe = 2 saut de ligne
+
+saut de ligne=terminer la ligne par un double espace
+
+italique=entourer par * *
+gras => ** **;
+combiner
+tilds*2 = barrer
+citation __ commencer le bloc par un chevron ferment >blabla
+
+pour creer une liste , commencer indifferement par *, _ , ou +
+
+liste== commencer par un nombre suivit d' un point
+
+code = nouvel paragraphe et tabulat(4 espace)
+
+code ds une ligne ,, mettre entre guillemt ==>  'code'
+
+filet de separation = <hr/> ou  3* ou 3- entourer de saut de ligne (2 retour à la ligne)
+
+lien  courament ou entourer de 2 chevron
+
+indiquer les parametre [text] (lien "param")
+image ==![Google logo](https://www.google.fr/images/srpr/logo11w.png "google logo")

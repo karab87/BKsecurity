@@ -1,0 +1,3 @@
+SELECT * FROM `fonction` as f, `exerce` as e, `agents` as a WHERE a.idAgents = e.ExerciceIDAgents AND f.idFonction = e.ExerciceIDFonction AND a.nom="SONON"
+
+SELECT * FROM `direction` as d, `affectation` as af, `agents` as a WHERE a.idAgents = af.AffectationidAgents AND af.affectationidDirection = d.idDirection AND d.code="DIP" 
