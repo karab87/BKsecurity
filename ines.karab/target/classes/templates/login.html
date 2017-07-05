@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8"/>
+<title>Authentification</title>
+<link rel="stylesheet" type="text/css" href="../static/css/bootstrap.css" 
+	th:href="@{css/bootstrap.css}" />
+
+<link rel="stylesheet" type="text/css" href="../static/css/style.css" 
+	th:href="@{css/style.css}" />
+</head>
+<body ng-app="myApp" ng-controller="HistoConnController">
+	<div class="col-md-6 col-sm-6 spacer">
+	<div class="panel panel-info">
+	<div class="panel-heading">Authentification</div>
+	<div class="panel-body">
+		<form th:action="@{/login}" method="post">
+		
+		<div class="form-group"><label class="control-label">Login:</label>
+		<input class="form-control"  type="text" name="username" placeholder="Your username" />
+		</div>
+		
+		<div class="form-group">
+		<label class="control-label">Password:</label>
+				<input class="form-control" type="password" name="password" placeholder="your password" ng-model="histoconn.histoconn"/>
+		</div>
+		<div>
+			<input class="btn btn-primary" type="submit" value="login" ng-model="histoconn.password"/>
+		</div>
+		</form>
+	</div>
+	</div>
+	</div>
+</body>
+</html>

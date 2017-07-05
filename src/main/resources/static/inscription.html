@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Inscription</title>
+<link rel="stylesheet" href="css/bootstrap.css" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body ng-app="myApp" ng-controller="InscriptionController">
+
+
+	<div class="col-md-6 col-sm-6 col-xs-12 spacer">
+		<div class="panel panel-info">
+			<div class="panel-heading">Inscription d'un etudiant</div>
+			<div class="panel-body">
+				<div ng-if="mode.value=='form'" >
+				
+				
+				
+				
+				<form>
+
+					<div class="form-group">
+						<label class="control-label">Nom:</label> <input
+							class="form-control" ng-model="etudiant.nom" type="text" /> <span
+							ng-if="errors" class="error">{{errors.nom}}</span>
+					</div>
+
+					<div class="form-group">
+						<label class="control-label">Prenom:</label> <input
+							class="form-control" ng-model="etudiant.prenom" type="text" />
+						<span ng-if="errors" class="error">{{errors.prenom}}</span>
+					</div>
+
+					<div class="form-group">
+						<label class="control-label">Date de naissance:</label> <input
+							class="form-control" ng-model="etudiant.dateNaissance"
+							type="date" /> <span ng-if="errors" class="error">{{errors.dateNaissance}}</span>
+					</div>
+					<div>
+						<button class="btn btn-primary" ng-click="saveEtudiant()">Save</button>
+					</div>
+				</form>
+				</div>
+				
+				
+				<div ng-if="mode.value=='confirm'" >
+				
+				<div class="panel-heading">Confirmation : l'etudiant a ete inscript avec succes</div>
+					
+				
+					<div class="form-group">
+						<label class="control-label">ID</label>
+						<label class="control-label">{{etudiant.idEtudiant}}</label>
+						
+					</div>
+					
+					<div class="form-group">
+						<label class="control-label">Nom</label>
+						<label class="control-label">{{etudiant.nom}}</label>
+						
+					</div>
+					
+					<div class="form-group">
+						<label class="control-label">Prenom</label>
+						<label class="control-label">{{etudiant.prenom}}</label>
+						
+					</div>
+					
+					<div class="form-group">
+						<label class="control-label">Date Naissance</label>
+						<label class="control-label">{{etudiant.dateNaissance|date:'yyyy'}}</label>
+						
+					</div>
+					 
+				</div>
+				<div ng-if="exception.message">
+					<span class="error">{{exception.message}}</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript" src="js/myApp.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Inscription</title>
+<link rel="stylesheet" href="css/bootstrap.css" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body ng-app="myApp" ng-controller="ListHistoConn">
+
+
+	<div class="col-md-6 col-sm-6 col-xs-12 spacer">
+		<table>
+			<thead>
+				<tr>
+					<th>NOM</th>
+					<th>PROFIL</th>
+					<th>DATE</th>
+					
+				</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="h in pageHistoConn.content">
+						
+						<td>{{h.username}}</td>
+						<td>{{h.role }}</td>
+						<td>{{h.dateConnexion |date:'dd/MM/yyyy'}}</td>
+					</tr>
+				</tbody>
+			
+		</table>
+	</div>
+
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript" src="js/myApp.js"></script>
+</body>
+</html>
